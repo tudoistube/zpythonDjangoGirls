@@ -1,4 +1,5 @@
-from django.shortcuts import render
+#from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 #...from 다음에 있는 마침표(.)는 현재 디렉토리 또는 애플리케이션을 의미합니다.
 from .models import Zpost
 from django.utils import timezone
@@ -9,3 +10,7 @@ def post_list(request):
     #return render(request, 'zblog/post_list.html', {})
     posts = Zpost.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'zblog/post_list.html', {'posts': posts})
+
+def post_detail(request, pk):
+    post = get_object_or_404(Zpost, pk=pk)
+    return render(request, 'zblog/post_detail.html', {'post': post})
