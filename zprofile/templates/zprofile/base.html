@@ -1,0 +1,139 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="http://fonts.googleapis.com/css?family=Maven Pro&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="{% static 'css/one-page-wonder.css' %}">
+
+  <title>Joywins'profile</title>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">2DoIs2Be and Joywins'Resume</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#codingTeacher">CodingTeacher</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#programmer">Programmer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#socialEconomyEntrepreneur">SocialEconomyEntrepreneur</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead">
+    <div class="overlay">
+      <div class="container">
+        <h1 class="display-1 text-white">Let's 2DoIs2Be and Joywins!</h1>
+        <h2 class="display-4 text-white">Here you visit one of the man who has an ability to enrich our ecosystem.</h2>
+      </div>
+    </div>
+  </header>
+
+  <section id="codingTeacher">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="{% static 'images/codingTeacher.png' %}" alt="codingTeacher">
+          </div>
+        </div>
+        <div class="col-md-6 order-1">
+          <div class="p-5">
+            <h2 class="display-4">Coding Teacher...</h2>
+            <p>I like studying and showing something good to others.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programmer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="{% static 'images/programmer.png' %}" alt="programmer">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-5">
+            <h2 class="display-4">Programmer</h2>
+            <p>Enjoyable experience and my growing point.
+                more than 10,000 working hours experience of ABAP programmer.
+                2years experience of Java and Springframework.
+                Now expand to Python and Javascript.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="socialEconomyEntrepreneur">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-2">
+          <div class="p-5">
+            <a href="http://joywins.creatorlink.net/" target="_blank">
+              <img class="img-fluid rounded-circle" src="{% static 'images/joywinsLogo.jpg' %}" alt="joywins">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 order-1">
+          <div class="p-5">
+            <h2 class="display-4">Talent Donation Open Project as my social enterprise biz item</h2>
+            <p>This is a smart and warm shopping system to mix shopping and donation for alone weak elder citizen.
+               Simply, I hope to be taken care of myself by some good Samaritan in future, by my becoming a good Samaritan to take care of the present alone elder citizen.
+               If you are interested in my idea, Please click the right-side image to develop our idea.</p>
+               <a href="http://joywins.creatorlink.net/" target="_blank">more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Joywins 2017</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/popper/popper.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+</body>
+
+</html>
