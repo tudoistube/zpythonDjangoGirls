@@ -3,6 +3,5 @@
 *__pycache__
 zvenv
 db.sqlite3
-/static
 .DS_Store
 git
