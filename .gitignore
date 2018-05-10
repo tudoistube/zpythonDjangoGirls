@@ -10,7 +10,6 @@ Serverside/
 *__pycache__
 zvenv
 db.sqlite3
-/static
 .DS_Store
 .ipynb_checkpoints
 *.ipynb
