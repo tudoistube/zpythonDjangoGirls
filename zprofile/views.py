@@ -12,3 +12,8 @@ def home_en(request):
     #pass
     # request.POST, request.FILES
     return render(request, 'zprofile/home_en.html', {})
+
+def home_hmd(request):
+    #pass
+    # request.POST, request.FILES
+    return render(request, 'zprofile/home_hmd.html', {})
